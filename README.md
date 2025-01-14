@@ -4,17 +4,18 @@
 
 ## 1. Add Product from Home Page
 
-**Description**: Verify that a user can search for a product using the search bar.
+**Description**: Verify that a user can log in and add a product to the cart from the homepage.
 
 ### Steps:
 
 1. Navigate to the ecommerce platform in desktop mode.
-2. Enter the name of a product in the search bar.
-3. Verify that the results match the entered criteria.
+2. Log in with valid credentials.
+3. Select a product from the homepage.
+4. Add the product to the cart.
 
 ### Validation:
 
-- The results display images, names, and prices of products related to the search.
+- The product appears in the cart with the correct price and quantity.
 
 ---
 
