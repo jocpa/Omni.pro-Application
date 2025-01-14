@@ -1,5 +1,5 @@
 import signupPage from "../Pages/signupPage"
-///<reference types="cypress" />
+
 
 describe('Sign up Form', () => {
    const url = 'https://www.demoblaze.com/'
