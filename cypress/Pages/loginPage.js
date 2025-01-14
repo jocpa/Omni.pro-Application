@@ -3,6 +3,7 @@ class loginPage {
  
     elements = {
 
+        categoryField: () => cy.get('#cat'),
         loginAnchor: () => cy.get('#login2'),
         usenameInput: () => cy.get('#loginusername'),
         passwordInput: () => cy.get('#loginpassword'),

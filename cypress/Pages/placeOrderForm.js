@@ -12,7 +12,8 @@ class placeOrderForm {
         yearInput: () => cy.get('#year'),
         purchaseBtn: () => cy.get('#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary'),
         successAlert: () => cy.get('.showSweetAlert'),
-        alertText: () => cy.get('.sweet-alert > h2')
+        alertText: () => cy.get('.sweet-alert > h2'),
+        confirmButton: () => cy.get('.confirm')
     }
     typeName(name) {
         this.elemements.nameInput().type(name)
@@ -34,6 +35,9 @@ class placeOrderForm {
     }
     purchaseButton() {
         this.elemements.purchaseBtn().click()
+    }
+    ConfirmBtn() {
+        this.elemements.confirmButton().click()
     }
 }
 
