@@ -137,3 +137,71 @@ Detailed logs and execution time
 
 - All steps are completed without errors.
 - The summary displays the correct product information, shipping details, and prices.
+
+# Mobile Test Cases
+
+## 1. Login on Mobile
+
+**Description**: Verify that a user can log in successfully with valid credentials on mobile devices.
+
+### Steps:
+
+1. Access the ecommerce platform in mobile view.
+2. Enter a valid username and password.
+3. Click the "Login" button.
+
+### Validation:
+
+- The user is redirected to the mobile-friendly homepage.
+- The user's profile is displayed correctly.
+
+---
+
+## 2. Sign Up on Mobile
+
+**Description**: Verify that a user can sign up successfully on mobile devices.
+
+### Steps:
+
+1. Access the ecommerce platform in mobile view.
+2. Navigate to the "Sign Up" form.
+3. Fill in the required fields.
+4. Submit the form.
+
+### Validation:
+
+- An alert is displayed indicating that the user already exists.
+
+---
+
+## 3. Add Product from Home Page on Mobile
+
+**Description**: Verify that a product can be added to the cart directly from the homepage on mobile devices.
+
+### Steps:
+
+1. Access the ecommerce platform in mobile view.
+2. Locate a product displayed on the homepage.
+3. Tap "Add to Cart" for the selected product.
+
+### Validation:
+
+- The cart updates with the selected product.
+- The product details and quantity are displayed correctly in the cart.
+
+## 5. Checkout on Mobile
+
+**Description**: Simulate the checkout process in a complete flow (without completing the payment) on mobile devices.
+
+### Steps:
+
+1. Navigate to the ecommerce platform in mobile view.
+2. Add a product to the cart.
+3. Proceed to checkout.
+4. Complete shipping and billing information.
+5. Validate the order summary.
+
+### Validation:
+
+- All steps are completed without errors.
+- The summary displays the correct product information, shipping details, and prices.
