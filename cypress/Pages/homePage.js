@@ -9,7 +9,7 @@ class homePage {
        addToCartBtn: () => cy.get('.col-sm-12 > .btn'),
        cartAchor: () => cy.get('#cartur'),
        productLayer: () => cy.get('.col-lg-8 > h2'),
-       placeOrderBtn: () => cy.get('.col-lg-1 > .btn')
+       placeOrderBtn: () => cy.get('.col-lg-1 > .btn'),
 
     }
 
@@ -21,6 +21,9 @@ class homePage {
     }
     goToCart(){
         this.elements.cartAchor().click()
+    }
+    placeOrder(){
+        this.elements.placeOrderBtn().click()
     }
 
 }
