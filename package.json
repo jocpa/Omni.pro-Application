@@ -4,11 +4,13 @@
   "description": "Practical Test for Ommni.Pro",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run --spec cypress/e2e/ --browser chrome --env allure=true",
+    "test-edge": "cypress run --spec cypress/e2e/ --browser edge"
   },
   "author": "Pablo Arzu",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
     "cypress": "^13.17.0",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-xpath": "^2.0.1"

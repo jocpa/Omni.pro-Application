@@ -18,3 +18,4 @@ import './commands'
 import 'cypress-mochawesome-reporter/register';
 
 require('cypress-xpath'); //add
+require('@shelex/cypress-allure-plugin');
