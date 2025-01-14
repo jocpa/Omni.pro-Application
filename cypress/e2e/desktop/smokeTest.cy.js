@@ -1,4 +1,4 @@
-import smokeTest from "../Pages/smokeTest";
+import smokeTest from "../../Pages/smokeTest";
 
 describe('Smoke Test', () => {
    

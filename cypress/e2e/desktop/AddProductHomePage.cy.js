@@ -1,5 +1,5 @@
-import homePage from "../Pages/homePage";
-import placeOrderForm from "../Pages/placeOrderForm";
+import homePage from "../../Pages/homePage";
+import placeOrderForm from "../../Pages/placeOrderForm";
 
 describe('Add Product from Home Page', () => {
     const url = 'https://www.demoblaze.com/'

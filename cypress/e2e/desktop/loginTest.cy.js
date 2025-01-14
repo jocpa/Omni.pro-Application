@@ -1,4 +1,4 @@
-import loginPage from "../Pages/loginPage";
+import loginPage from "../../Pages/loginPage";
 
 describe('Login Test', () => {
    const url = 'https://www.demoblaze.com/'

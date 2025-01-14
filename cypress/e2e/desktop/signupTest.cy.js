@@ -1,4 +1,4 @@
-import signupPage from "../Pages/signupPage"
+import signupPage from "../../Pages/signupPage"
 
 
 describe('Sign up Form', () => {
