@@ -25,7 +25,7 @@ describe('Login Test', () => {
   it('Wrong Credentials', () => {
 
     loginPage.clickAnchor()
-    loginPage.typeUserName('baduser')
+    loginPage.typeUserName('jocpa')
     loginPage.typePassword('badpass')
     loginPage.clickBtn()
 
