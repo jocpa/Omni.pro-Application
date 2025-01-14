@@ -1,6 +1,58 @@
-# Documentation
+# Project Documentation
 
-## Test cases
+## Overview
+
+This project is a test automation suite built with **Cypress** to validate critical functionalities of an ecommerce platform. The tests are designed to work on both desktop and mobile views, ensuring cross-device compatibility. It leverages **Mocha Awesome Reporter** for generating detailed test reports.
+
+---
+
+## Prerequisites
+
+Before running the project, ensure the following are installed:
+
+- [Node.js](https://nodejs.org) (LTS version recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- Cypress (`npm install cypress`)
+
+---
+
+## Project Setup
+
+1. Clone this repository and install the dependencies
+   git clone <repository_url>
+   npm install
+
+### To execute all tests in the suite
+
+npm run dev
+
+### Run Specific Tests
+
+npx cypress run --spec "cypress/e2e/<test_file_name>.cy.js"
+
+### Run test using the cypress user interface
+
+npx cypress open
+
+## Viewing Reports
+
+This project uses Cypress Mocha Awesome Reporter for generating reports.
+
+### Generating a Report
+
+After running the tests, a report will be automatically generated in the mochawesome-report directory.
+You can customize the reporter configuration in the cypress.config.js file under the reporterOptions section.
+Viewing the Report
+
+### To view the report:
+
+Open the mochawesome-report/mochawesome.html file in any browser.
+The report provides:
+Test case results (Passed/Failed)
+Screenshots for failed tests (if configured)
+Detailed logs and execution time
+
+# Test cases
 
 ## 1. Login
 
