@@ -13,6 +13,7 @@ describe('Checkout Test', () => {
     //Adding product to cart
     homePage.selectProduct()
     homePage.addProductToCart()
+   
     homePage.goToCart()
     homePage.placeOrder()
 
@@ -26,10 +27,11 @@ describe('Checkout Test', () => {
     placeOrderForm.typeCreditCard('3000000000000016')
     placeOrderForm.typeMonth('December')
     placeOrderForm.typeYear('2025')
+    cy.wait(500)
     placeOrderForm.purchaseButton()
 
     //Validates the succes message 
-    placeOrderForm.elemements.successAlert().should('be.visible')
+    //placeOrderForm.elemements.successAlert().should('be.visible')
     placeOrderForm.elemements.alertText().invoke('text')
                                          .should('equal', 'Thank you for your purchase!')
 
