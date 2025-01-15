@@ -1,5 +1,5 @@
-const homePage = require("../../Pages/homePage");
-const placeOrderForm = require("../../Pages/placeOrderForm");
+import homePage from "../../Pages/homePage"
+import placeOrderForm from "../../Pages/placeOrderForm"
 
 describe('Checkout Test', () => {
     const url = 'https://www.demoblaze.com/'

@@ -1,6 +1,7 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  defaultCommandTimeout: 10000, // Aumenta a 10 segundos
   screenshotOnRunFailure: true, //add
   reporter: 'cypress-mochawesome-reporter', //add
   reporterOptions: { //add

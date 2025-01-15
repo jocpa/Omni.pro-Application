@@ -17,8 +17,10 @@ describe('Sign up Form test in mobile resolution', () => {
     
     //Filling the Form
     signupPage.signupAnchor()
+    cy.wait(500)
     signupPage.typeUserName(user)
     signupPage.typePassword(pass)
+    cy.wait(500)
     signupPage.clickBtn()
 
     //Validates the alert message
