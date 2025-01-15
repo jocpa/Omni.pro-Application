@@ -10,9 +10,9 @@ class placeOrderForm {
         creditCardNumber: () => cy.get('#card'),
         mothInput: () => cy.get('#month'),
         yearInput: () => cy.get('#year'),
-        purchaseBtn: () => cy.get('#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary'),
+        purchaseBtn: () => cy.xpath('//*[@id="orderModal"]/div/div/div[3]/button[2]'),
         successAlert: () => cy.get('.showSweetAlert'),
-        alertText: () => cy.get('.sweet-alert > h2'),
+        alertText: () => cy.xpath('/html/body/div[10]/h2'),
         confirmButton: () => cy.get('.confirm')
     }
     typeName(name) {

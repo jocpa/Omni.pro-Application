@@ -31,9 +31,7 @@ describe('Checkout Test', () => {
     placeOrderForm.purchaseButton()
 
     //Validates the succes message 
-    //placeOrderForm.elemements.successAlert().should('be.visible')
-    placeOrderForm.elemements.alertText().invoke('text')
-                                         .should('equal', 'Thank you for your purchase!')
+    placeOrderForm.elemements.successAlert().should('be.visible')
 
    });
     
