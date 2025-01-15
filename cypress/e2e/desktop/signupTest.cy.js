@@ -1,23 +1,28 @@
 import signupPage from "../../Pages/signupPage"
+import { generateUniquePassword } from "../../helpers/randomUserName"
 
+const randomUserName = generateUniquePassword()
 
 describe('Sign up Form', () => {
    const url = 'https://www.demoblaze.com/'
 
-   const username = `user${Math.random()*100}`
-   const password = `password${Math.random().toString(36).substring(2, 8)}`
+   const userName = `user:${randomUserName}`
+   const password = `password${Math.random()}`
 
    beforeEach(() => {
     cy.visit(url)
   })
     
-
    it('Should fill the field of the form', () => {
     
     //Filling the Form
     signupPage.signupAnchor()
-    signupPage.typeUserName(username)
+    cy.wait(500)
+
+    signupPage.typeUserName(userName)
     signupPage.typePassword(password)
+
+    cy.wait(500)
     signupPage.clickBtn()
 
     //Validates the alert message
