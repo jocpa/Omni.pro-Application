@@ -24,7 +24,7 @@ Before running the project, ensure the following are installed:
 
 ### To execute all tests in the suite
 
-npm run dev
+npm run test
 
 ### Run Specific Tests
 
